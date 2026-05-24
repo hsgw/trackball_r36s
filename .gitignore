@@ -1,2 +1,4 @@
 build/*
 dist/*
+assets/hit.wav
+assets/shot.wav

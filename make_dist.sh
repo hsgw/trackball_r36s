@@ -15,6 +15,10 @@ echo "==> 実行ファイルとフォントを dist/ へ集約中..."
 cp build/trackball_demo dist/ports/trackball/
 cp assets/PressStart2P-Regular.ttf dist/ports/trackball/
 
+# 音声ファイルがあればコピー（再配布不可のため任意）
+cp assets/shot.wav dist/ports/trackball/ 2>/dev/null || true
+cp assets/hit.wav dist/ports/trackball/ 2>/dev/null || true
+
 echo "==> 起動用スクリプトを生成中..."
 cat << 'EOF' > "dist/ports/Trackball Demo.sh"
 #!/bin/bash

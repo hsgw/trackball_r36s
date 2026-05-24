@@ -21,18 +21,26 @@ SDL2 を使用して、トラックボールによるカーソル操作、スク
 
 実機（R36S）または同様の Debian/Ubuntu ベースの Linux 環境でビルドできます。
 
+### (OPTION) 効果音
+
+hit.wavとshot.wavを用意して`assets/`へ配置してください。
+
 ### 1. 依存関係のインストール
+
 最初に一度だけ実行してください。
+
 ```bash
 chmod +x setup_deps.sh
 ./setup_deps.sh
 ```
 
 ### 2. ビルド
+
 ```bash
 chmod +x build.sh
 ./build.sh
 ```
+
 `build/trackball_demo` が生成されます。
 
 ## R36S へのインストール
@@ -40,22 +48,28 @@ chmod +x build.sh
 実機上でビルドし、そのまま本体の Ports セクションに登録する場合の手順です。
 
 ### 1. インストール用パッケージの作成
+
 ```bash
 chmod +x make_dist.sh
 ./make_dist.sh
 ```
+
 `dist/` ディレクトリに必要なファイル（バイナリ、フォント、起動スクリプト）が集約されます。
 
 ### 2. 本体の Ports フォルダへコピー
+
 ```bash
 chmod +x install_locally.sh
 ./install_locally.sh
 ```
+
 これにより、`/roms/ports/` にアプリケーションが配置されます。
 
 ### 3. 起動
+
 EmulationStation の **Ports** メニューから 「**Trackball Demo**」を選択して起動してください。
 
 ## ライセンス
-フォント: [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) (SIL Open Font License)
+
+フォント: [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) ([SIL Open Font License](https://openfontlicense.org/documents/OFL.md))
 コード: MIT License
