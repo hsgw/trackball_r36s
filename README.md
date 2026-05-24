@@ -72,4 +72,5 @@ EmulationStation の **Ports** メニューから 「**Trackball Demo**」を選
 ## ライセンス
 
 フォント: [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) ([SIL Open Font License](https://openfontlicense.org/documents/OFL.md))
-コード: MIT License
+
+コード: MIT License ((c) 2026, Takuya Urakawa (5z6p.com))
